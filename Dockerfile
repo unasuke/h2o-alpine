@@ -16,7 +16,7 @@ RUN apk add --no-cache --virtual=builddeps \
         ruby-dev        \
         wget            \
         zlib-dev        \
-    && wget -O - https://github.com/h2o/h2o/archive/v2.0.4.tar.gz | tar xz \
+    && wget -O - https://github.com/h2o/h2o/archive/v2.1.0-beta3.tar.gz | tar xz \
     && cd h2o-* \
     && cmake -DWITH_BUNDLED_SSL=on -DWITH_MRUBY=on . \
     && make install \
