@@ -1,6 +1,6 @@
 FROM alpine
 
-ENV H2O_VERSION=v2.0.5
+ENV H2O_VERSION=v2.1.0-beta4
 
 RUN apk add --no-cache --virtual=builddeps \
         bison           \
